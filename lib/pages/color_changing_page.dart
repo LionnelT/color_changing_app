@@ -36,8 +36,8 @@ class _ColorChangingPageState extends State<ColorChangingPage> {
         backgroundColor: colorChanger.getBackgroundColor(),
         body: const Center(
           child: Text(
-            'Hello there',
-            style: TextStyle(fontSize: 32),
+            'Tap anywhere to change the color' ,
+            style: TextStyle(fontSize: 20),
           ),
         ),
       ),

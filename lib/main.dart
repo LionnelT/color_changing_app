@@ -1,8 +1,16 @@
 import 'package:color_changing_app/pages/splash_screen.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Main());
+  runApp(
+    DevicePreview(
+      isToolbarVisible: false,
+      enabled: kIsWeb,
+      builder: (context) => const Main(),
+    ),
+  );
 }
 
 /// This is the entry point of the Flutter app.
